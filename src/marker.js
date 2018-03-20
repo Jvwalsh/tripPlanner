@@ -11,7 +11,7 @@ const oneFunction = function (string, location) {
 
     //location is the array coords
     let bckGround;
-    
+
 
     if (string === "hotel") {
         bckGround = "url(http://i.imgur.com/D9574Cu.png)";
@@ -28,16 +28,16 @@ const oneFunction = function (string, location) {
 
     // return {
     //     bckGround, location};
-    
+
     const markerDomEl = document.createElement("div"); // Create a new, detached DIV
     markerDomEl.style.width = "32px";
     markerDomEl.style.height = "39px";
-    markerDomEl.style.backgroundImage =bckGround;
+    markerDomEl.style.backgroundImage = bckGround;
     console.log(markerDomEl, "dom El");
 
-    // let markerNew = new mapboxgl.Marker(document.getElementById(markerDomEl)).setLngLat(location).addTo(map);
+    let markerNew = new mapboxgl.Marker(markerDomEl).setLngLat(location).addTo(map);
     // console.log(markerNew, 'look here');
-    return {markerDomEl, location}
+    // return {markerDomEl, location}
 }
 
 

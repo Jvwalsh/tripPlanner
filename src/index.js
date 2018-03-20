@@ -13,7 +13,7 @@ const map = new mapboxgl.Map({
 
 let tempMark = multiFunc('activity', [-87.6254, 41.8685]);
 let tempMark2 = multiFunc('restaurant', [-87.6254, 41.5685]);
-// let tempMark2 = 
+// let tempMark2 =
 
 // const markerDomEl = document.createElement("div"); // Create a new, detached DIV
 // markerDomEl.style.width = "32px";
@@ -25,8 +25,6 @@ let tempMark2 = multiFunc('restaurant', [-87.6254, 41.5685]);
 
 // new mapboxgl.Marker(document.getElementById(markerDomEl)).setLngLat([-87.6354, 41.8885]).addTo(map);
 // new mapboxgl.Marker(document.getElementById(markerDomEl)).setLngLat([-87.6454, 41.8985]).addTo(map);
-new mapboxgl.Marker(document.getElementById(tempMark.markerDomEl)).setLngLat(tempMark.location).addTo(map);
-
-new mapboxgl.Marker(document.getElementById(tempMark2.markerDomEl)).setLngLat(tempMark2.location).addTo(map);
-
-
+// new mapboxgl.Marker(tempMark.markerDomEl).setLngLat(tempMark.location).addTo(map);
+//
+// new mapboxgl.Marker(tempMark2.markerDomEl).setLngLat(tempMark2.location).addTo(map);
